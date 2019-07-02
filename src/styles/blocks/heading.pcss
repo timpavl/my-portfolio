@@ -1,0 +1,70 @@
+.heading {
+    /* background: url(././images/content/heading/bg-header.jpg) center center/cover no-repeat; */
+    background-image: url(‘~images/content/heading/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10000000;
+}
+.container {
+    z-index: 1000;
+}
+.header-content {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.header-content__info {
+    display: flex;
+    padding-left: 25%;
+}
+.header-content__subtitle {
+    max-width: 165px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: hsla(0,0%,100%,.4);
+    text-align: right;
+}
+.header-content__title {
+    max-width: 411px;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: .91em;
+    padding: 0 6%;
+}
+.header-content__scroll {
+    width: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.scroll__text {
+    font-size: 18px;
+    font-weight: 400;
+    transition: 250ms;
+}
+.scroll__svg {
+    width: 30px;
+    transition: fill 250ms;
+}
+.header-content__scroll {
+    color: white;
+    fill: white;
+    /* что бы верстка не ехала */
+    padding-bottom: 6px; 
+    &:hover,
+    &:focus {
+        padding-bottom: 3px;
+        color: $orange;
+        fill: $orange;
+        .scroll__svg {
+            transform: scale(1.2);
+            width: 33px;
+        }
+        .scroll__text {
+            font-size: 19px;
+        }
+    }
+}

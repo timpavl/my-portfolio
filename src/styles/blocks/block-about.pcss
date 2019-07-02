@@ -1,0 +1,97 @@
+.about {
+    background-image: url(‘~images/content/heading/bg-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 99999999;
+}
+.about__section {
+    height: 646px;
+    padding-top: 170px;
+}
+.about-content {
+    height: 375px;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 280px fit-content(520px);
+    grid-template-rows: 200px 95px;
+    grid-gap: 80px 150px;
+    grid-template-areas: "photo descr" "general tip";
+}
+.about-content__img-photo {
+    grid-area: photo;
+    justify-self: end;
+}
+.about-content__descr {
+    grid-area: descr;
+}
+.about-content__general {
+    grid-area: general;
+    display: grid;
+    grid-template-columns: 50% fit-content(95px);
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: end;
+}
+.about-content__tip {
+    grid-area: tip;
+    &::before {
+        content: "*";
+        font-size: 3rem;
+        position: absolute;
+        top: 19rem;
+        right: 34rem;
+        line-height: 0;
+        font-style: italic;
+        color: rgba(255,0,0,.1);
+    }   
+}
+.about-content__img-avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.descr__hi {
+    color: hsla(0,0%,100%,.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.descr__name {
+    padding-top: 1.875rem;
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.descr__info {
+    padding-top: 2.375rem;
+    color: hsla(0,0%,100%,.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* .about-content__general-info {
+    line-height: 30px;
+} */
+.about-content__general-cell-l {
+    font-weight: 600;
+}
+.about-content__general-cell-r {
+    color: white;
+    font-weight: 600;
+}  
+.about-content__tip-text {
+    color: hsla(0,0%,100%,.5);
+    font-weight: 300;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.875rem;
+    /* &::after {
+        content: "*";
+        font-size: 3rem;
+        line-height: 0;
+        font-style: italic;
+        color: rgba(255,0,0,.1);
+    } */
+}

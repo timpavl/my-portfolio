@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 3.4375rem;
+}
+.logo-link {
+    font-size: 2.25rem;
+    color: white;
+    font-weight: 800;
+    transition: 250ms;
+    &:hover,
+    &:focus {
+        color: $orange;
+    }
+}
+.header__nav{
+    width: 690px; 
+    /* как сделать так что бы max-width переводился в ремы */
+}
+.nav__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__items {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.main-menu__link {
+    color: white;
+    &:hover,
+    &:focus {
+        color: $orange;
+    }
+}

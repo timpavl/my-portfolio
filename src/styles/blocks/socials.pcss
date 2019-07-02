@@ -1,0 +1,27 @@
+.socials {
+    display: flex;
+    justify-content: center; 
+}
+.social__item {
+    margin-left: 40px;
+        &:first-child {
+            margin-left: 0;
+        }
+}
+.social__link {
+    display: flex;
+    align-items: center;
+}
+.social__svg {
+    width: 25px;
+    height: 25px;
+    fill: hsla(0,0%,100%,.5);
+    transition: fill 250ms;
+    &:hover,
+    &:focus {
+        fill: $orange;
+    }
+}
+.header .socials{
+    width: 15%;
+}

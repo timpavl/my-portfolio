@@ -1,3 +1,8 @@
+/* my normalize */
+* {
+  box-sizing: border-box;
+}
+
 html {
   @include desktop {
     font-size: 15px;
@@ -24,13 +29,17 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  /* my edits */
+  min-height: 100%;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1480px;
   width: 95%;
-  // width: 1490px;
+  /* my edits */
+  position: relative; 
+
 
   @include phones {
     width: 85%;
