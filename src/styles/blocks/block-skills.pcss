@@ -1,0 +1,45 @@
+.skills {
+    min-height: 1021px;
+    background-image: url(‘~images/content/skills/skills-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10000000;
+    &::after {
+        content: url(‘~images/content/skills/keyboard-skills-bg.png);
+        position: absolute;
+        top: 8.0625rem;
+    }  
+}
+.skills__section {
+    padding-top: 149px;
+    min-width: 1311px;
+}
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__next {
+    display: grid;
+    grid-template-columns: fit-content(588px);
+}
+.skills__title-info {
+    padding-top: 59px;
+    color: hsla(0,0%,100%,.5);
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 588px;
+}
+.skills__grid {
+    padding-top: 6.5%;
+    min-width: 684px;
+    display: grid;
+    justify-content: end;
+}
+.skills__title {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+/* этот метод я нашёл в другой работе */
