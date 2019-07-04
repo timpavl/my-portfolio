@@ -6,5 +6,7 @@
   "bp-tablets": "768px",
   "bp-phones": "480px",
   "orange": "#ff9a00",
-  "grey": "#75787a"
+  "grey": "#75787a",
+  "dark-grey": "#2d3c4e",
+  "blue": "#4b6fd7"
 }

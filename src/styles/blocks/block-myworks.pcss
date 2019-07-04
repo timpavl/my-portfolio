@@ -1,0 +1,130 @@
+.myworks__section {
+    min-width: 1472px;
+    min-height: 1086px;
+    display: flex;
+    align-items: center;
+}
+.myworks__title {
+    font-size: 2.26rem;
+    padding-bottom: 92px;
+    font-weight: 700;
+} 
+.myworks-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 549px;
+}
+.myworks-slider__sites {
+    width: 1025px;
+    display: flex;
+    margin-right: 7.4%;
+}
+.myworks-slider__sites-pics {
+    width: 95%;
+}
+.myworks-slider__sites-content {
+    min-height: 549px;
+    padding-top: 41%;
+    background-image: url(‘~images/content/myworks-slider/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.myworks-slider__item--active {
+    border: 2px solid $orange;
+}
+.myworks-slider__list {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.myworks-slider__item {
+    height: 100%;
+    width: 178px;
+    cursor: pointer;
+    transition: filter 250ms;
+        &:hover {
+            filter: saturate(500%);
+        }
+}
+.myworks-slider__sites-buttons{
+    height: 100px;
+    width: 50px;
+    background: black;
+    margin-top: 39%;
+}
+.slider__switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: $dark-grey;
+        &:hover {
+            .slider__arrow-svg {
+                fill: $orange;
+            }
+        }
+}
+.slider__arrow-svg {
+    width: 10px;
+    fill: #fff;
+    transition: fill 250ms;
+}
+.slider__arrow-svg-prev {
+    transform: rotate(180deg);
+    fill: hsla(0,0%,50%,.6);
+}
+@each $item in 1,2,3,4 {  
+  li[data-slide='#{$item}'] {
+  background-image: url(‘~images/content/myworks-slider/#{$item}.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+.myworks-slider__data {
+    max-width: 341px;
+}
+.myworks-slider__tech {
+    display: flex;
+}
+.myworks-slider__tech-item {
+    font-weight: 600;
+    padding: 1.0625rem 1.25rem;
+    border-radius: 20px;
+    background-color: rgba(122,160,197,.1);
+    margin-right: .9375rem;
+    margin-bottom: .9375rem;
+}
+.myworks-slider__title {
+    padding-top: 2.1875rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.myworks-slider__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $grey;
+    line-height: 1.875rem;
+    padding-top: 2.75rem;
+}
+.myworks-slider__link {
+    display: block;
+    margin-top: 3.125rem;
+    color: $blue;
+    font-size: 1.125rem;
+    font-weight: 700;
+    &:hover {
+        .myworks-slider__link-text {
+            text-decoration: underline;
+        }
+    }
+}
+.description-link__svg {
+    width: .9375rem;
+    height: .9375rem;
+    fill: $blue;
+    transition: fill .4s;
+    margin-right: 1.25rem;
+}

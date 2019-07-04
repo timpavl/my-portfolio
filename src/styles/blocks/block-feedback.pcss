@@ -1,0 +1,111 @@
+.feedback-bg {
+    height: 1375px;
+    background-image: url(‘~images/content/feedback/feedback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+        content: "";
+        background-image: url(‘~images/content/feedback/feedback-foliage.png);
+        position: absolute;
+        right: 0;
+        bottom: 12rem;
+        width: 49.8125rem;
+        height: 87.75rem;
+    }
+}
+.reviews__section {
+    width: 954px;
+}
+.reviews-content {
+    padding-top: 141px;
+    min-height: 356px;
+}
+.reviews__slider-title {
+    display: flex;
+    align-items: center;
+}
+.reviews__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 6.06rem;
+}
+.reviews__btn {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__btn__left,
+.reviews__btn__right {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms;
+    &:hover {
+        border: 1px solid $orange;
+        .reviews__btn__left-svg {
+            fill: $orange;
+        }
+        .reviews__btn__right-svg {
+            fill: $orange;
+        }
+    }
+}
+.reviews__btn__left-svg,
+.reviews__btn__right-svg {
+    width: 8px;
+    fill: #fff;
+    transition: fill 250ms;
+}
+.reviews__btn__left-svg {
+    transform: rotate(180deg);
+}
+.reviews__slider-viewport {
+    padding-top: 6rem;
+}
+.reviews__slider-slid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.reviews__slider-item {
+    width: 50%;
+    display: grid;
+    grid-template-columns: fit-content(105px) fit-content(325px);
+}
+.reviews__slider-commas{
+    height: 100%;
+}
+.reviews__slider-commas-svg {
+    width: 4.6875rem;
+    height: 3.9375rem;
+    fill: hsla(0,0%,100%,.05);
+    margin-right: 1.875rem;
+}
+.reviews__slider-comment-blockquote {
+    min-height: 135px;
+    color: hsla(0,0%,100%,.5);
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+.reviews__slider-comment-author {
+    display: flex;
+    align-items: center;
+}
+.reviews__slider-author-desc {
+    margin-left: 30px;
+}
+.reviews__slider-author-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 1rem;
+}
+.reviews__slider-author-position {
+    font-weight: 600;
+}
