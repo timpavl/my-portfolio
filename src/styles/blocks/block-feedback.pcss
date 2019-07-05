@@ -107,5 +107,113 @@
     padding-bottom: 1rem;
 }
 .reviews__slider-author-position {
+    color:hsla(0,0%,100%,.3);
     font-weight: 600;
+    font-size: 1rem;
+}
+.contact__section {
+    width: 954px;
+}
+.contact-content {
+    padding-top: 200px;
+    min-height: 510px;
+}
+.contact__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+.form {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form__label-title {
+    width: 100%;
+    color: hsla(0,0%,100%,.3);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+.form__label {
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #fff;
+    &:focus,
+    &:hover {
+        border-color: $orange;
+        fill: $orange;
+        .form__svg {
+            fill: $orange;
+        }
+    }
+}
+.form__label--half {
+    width: calc(50%-25px);
+    margin-left: 50px;
+        &:first-child {
+            margin-left: 0;
+        }
+}
+.form__label--full {
+  margin-top: 40px;
+  width: 100%;
+}
+.form__svg-wrap {
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.form__svg-wrap {
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.form__svg-wrap--textarea {
+  align-items: flex-start;
+  padding-top: 5px;
+}
+.form__svg {
+  width: 30px;
+  fill: $grey;
+  transition: fill .25s;
+}
+.form__input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  flex: 1;
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+    &::-webkit-input-placeholder { 
+      color: #fff; 
+    } 
+    &:focus::-webkit-input-placeholder {
+      color: transparent
+    } 
+}
+
+.form__input--textarea {
+  resize: none;
+  height: 60px;
+}
+.form__button {
+    margin-top: 60px;
+    width: 347px;
+    height: 80px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ea7400 0%, #f29400 100%);
+    &:hover,
+    &:focus {
+        background-image: linear-gradient(to right, #ea7400 0%, $orange 100%);
+    }
+
 }
