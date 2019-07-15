@@ -1,9 +1,14 @@
 .myworks__section {
-    min-width: 1472px;
+    max-width: 1472px;
     min-height: 1086px;
+    padding-top: 11.6%;
     display: flex;
     align-items: center;
 }
+.myworks-content {
+        max-width: 1366px;
+        width: 100%;
+    }
 .myworks__title {
     font-size: 2.26rem;
     padding-bottom: 92px;
@@ -13,7 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 549px;
+    /* height: 549px; */
+    width: 100%;
 }
 .myworks-slider__sites {
     width: 1025px;
@@ -22,13 +28,20 @@
 }
 .myworks-slider__sites-pics {
     width: 95%;
+    margin-bottom: 21.5%;
 }
 .myworks-slider__sites-content {
-    min-height: 549px;
-    padding-top: 41%;
+    /* min-height: 549px; */
+    padding-top: 63%;
     background-image: url(‘~images/content/myworks-slider/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.myworks-slider__sites-nav {
+    margin-top: -21.5%;
+    margin-right: -50px;
+    display: flex;
+    justify-content: flex-end;
 }
 .myworks-slider__item--active {
     border: 2px solid $orange;
@@ -51,7 +64,7 @@
     height: 100px;
     width: 50px;
     background: black;
-    margin-top: 39%;
+    /* margin-top: 39%; */
 }
 .slider__switch {
     display: flex;
@@ -127,4 +140,76 @@
     fill: $blue;
     transition: fill .4s;
     margin-right: 1.25rem;
+}
+@media only screen and (max-width: 1600px) {
+    .myworks__section {
+        justify-content: center;
+    }
+    /* .myworks-content {
+        max-width: 1366px;
+    } */
+    .myworks-slider__sites {
+        width: 76%;
+        margin-right: 5%;
+    }
+    .myworks-slider__sites-content {
+        padding-top: 62.5%;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .myworks-slider__list .myworks-slider__item:nth-child(4) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .myworks-content {
+        max-width: 866px;
+        padding-right: 6.77%;
+        padding-left: 4.95%;
+    }
+    .myworks-slider {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .myworks-slider__sites {
+        margin-right: 0;
+        width: 100%;
+    }
+    .myworks-slider__data {
+        max-width: 438px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10.6%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .myworks-slider__list .myworks-slider__item:nth-child(3) {
+        display: none;
+    }
+}
+@media only screen and (max-width: 511px) {
+    .myworks__section {
+        width: 100%;
+    }
+    .myworks-content {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .myworks__title {
+        text-align: center;
+    }
+    .myworks-slider__list {
+        display: none;
+    }
+    .myworks-slider__sites-pics {
+        width: 100%;
+    }
+    .myworks-slider__sites-nav {
+        margin-top: -87.5px;
+        margin-right: 0px;
+    }
+    .myworks-slider__data {
+        width: 81.25%;
+    }
 }

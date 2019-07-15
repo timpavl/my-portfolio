@@ -5,15 +5,22 @@
     background-size: cover;
     position: relative;
     z-index: 10000000;
-    &::after {
+    /* &::after {
         content: url(‘~images/content/skills/keyboard-skills-bg.png);
         position: absolute;
         top: 8.0625rem;
-    }  
+    }   */
+}
+.skills__background {
+    position: absolute;
+    top: 8.0625rem;
+}
+.skills__background--left {
+    width: 682px;
 }
 .skills__section {
     padding-top: 149px;
-    min-width: 1311px;
+    max-width: 1311px;
 }
 .skills-content {
     display: flex;
@@ -31,6 +38,8 @@
     font-weight: 600;
     max-width: 588px;
 }
+/*TODO что то не допонимаю судя по всему, проблема с размерами
+разбор при созвоне в devtools*/
 .skills__grid {
     padding-top: 46px;
     min-width: 684px;
@@ -44,3 +53,40 @@
     padding-top: 50px;
 }
 /* этот метод я нашёл в другой работе */
+@media only screen and (max-width: 1700px) {
+    .skills__background {
+        top: 49%;
+    }
+    .skills__background--left {
+        width: 395px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .skills__section {
+        padding-top: 10.7%;
+    }
+}
+@media only screen and (max-width: 1045px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+    .skills__background {
+        position: static;
+    }
+    .skills__background--left {
+        transform: translateY(15.3%) rotate(-90deg);
+        max-width: 486px;
+        margin: 0 auto;
+        margin-top: -171px;
+        /*TODO какие то кастыли получились*/
+    }
+}
+@media only screen and (max-width: 500px) {
+    .skills__section {
+        margin-bottom: 15%;
+    }
+    .skills__background--left {
+        width: 74vw; 
+    }
+}

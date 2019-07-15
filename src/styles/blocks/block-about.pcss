@@ -6,18 +6,18 @@
     z-index: 99999999;
 }
 .about__section {
-    height: 646px;
+    min-height: 646px;
     padding-top: 170px;
 }
 .about-content {
     height: 375px;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     position: relative;
     display: grid;
     grid-template-columns: 280px fit-content(520px);
     grid-template-rows: 200px 95px;
-    grid-gap: 80px 150px;
+    grid-gap: 13.3% 16.7%;
     grid-template-areas: "photo descr" "general tip";
 }
 .about-content__img-photo {
@@ -36,12 +36,14 @@
 }
 .about-content__tip {
     grid-area: tip;
+    display: flex;
     &::before {
         content: "*";
         font-size: 3rem;
-        position: absolute;
-        top: 19rem;
-        right: 34rem;
+        width: 22px;
+        height: 22px;
+        margin-left: -42px;
+        margin-top: 5%;
         line-height: 0;
         font-style: italic;
         color: rgba(255,0,0,.1);
@@ -87,6 +89,7 @@
     font-size: 1rem;
     font-style: italic;
     line-height: 1.875rem;
+    margin-left: 18px;
     /* &::after {
         content: "*";
         font-size: 3rem;
@@ -94,4 +97,64 @@
         font-style: italic;
         color: rgba(255,0,0,.1);
     } */
+}
+@media only screen and (max-width: 1600px) {
+    .about__section {
+        padding-top: 10.6%;
+    }
+    .about__section {
+        max-width: 686px;
+    }
+    .about-content {
+        grid-template-columns: 212px fit-content(386px);
+        grid-template-rows: 178px 90px;
+    }
+    .about-content__img-photo {
+        justify-self: start;
+    }
+    .about-content__img-avatar {
+        height: 172px;
+        width: 172px;
+    }
+    .descr__hi {
+        font-size: 16px;
+    }
+    .descr__name {
+        padding-top: 20px;
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .descr__info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about-content__general-cell-l,
+    .about-content__general-cell-r {
+        font-size: 16px;
+        /* TODO это особенность движка или сборки...
+        раньше не замечал что шрифт c уменьшением width уменьшается
+        или меня глючит*/
+    }
+}
+@media only screen and (max-width: 626px) {
+    .about__section {
+        min-height: -webkit-fill-available;
+    }
+    .about-content__img-photo {
+        justify-self: center;
+    }
+    .about-content {
+        height: auto;
+        grid-template-areas: "photo" "general" "descr" "tip";
+        grid-template-columns: fit-content(254px);
+        grid-template-rows: 172px 73px 252px 134px;
+        grid-gap: 48px;
+        justify-content: center;
+    }
+    .descr__name {
+        line-height: 36px;
+    }
+    .about-content__general {
+        grid-template-columns: 50% 50%;
+    }
 }

@@ -11,12 +11,13 @@ section.section.myworks
                 .myworks-slider__sites
                     .myworks-slider__sites-pics
                         .myworks-slider__sites-content
+                        .myworks-slider__sites-nav
                             +slider(['1','2','3','4'])
-                    .myworks-slider__sites-buttons
-                        button.slider__switch.slider__switch-next
-                            +icon('arrow-down', 'slider__arrow-svg slider__arrow-svg-next')
-                        button.slider__switch.slider__switch-prev
-                            +icon('arrow-down', 'slider__arrow-svg slider__arrow-svg-prev')
+                            .myworks-slider__sites-buttons
+                                button.slider__switch.slider__switch-next
+                                    +icon('arrow-down', 'slider__arrow-svg slider__arrow-svg-next')
+                                button.slider__switch.slider__switch-prev
+                                    +icon('arrow-down', 'slider__arrow-svg slider__arrow-svg-prev')
                 //- информация
                 .myworks-slider__data
                     ul.myworks-slider__tech

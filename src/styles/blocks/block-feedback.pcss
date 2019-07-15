@@ -1,5 +1,5 @@
 .feedback-bg {
-    height: 1375px;
+    min-height: 1375px;
     background-image: url(‘~images/content/feedback/feedback.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@
     }
 }
 .reviews__section {
-    width: 954px;
+    max-width: 954px;
 }
 .reviews-content {
     padding-top: 141px;
@@ -112,7 +112,7 @@
     font-size: 1rem;
 }
 .contact__section {
-    width: 954px;
+    max-width: 954px;
 }
 .contact-content {
     padding-top: 200px;
@@ -160,7 +160,7 @@
 }
 .form__label--full {
   margin-top: 40px;
-  width: 100%;
+  width: 860px;
 }
 .form__svg-wrap {
   width: 30px;
@@ -215,5 +215,95 @@
     &:focus {
         background-image: linear-gradient(to right, #ea7400 0%, $orange 100%);
     }
-
+}
+@media only screen and (max-width: 850px) {
+    .reviews__slider-commas-svg {
+        width: 30px;
+        height: 26px;
+        margin-right: 10px;
+    }
+    /* contact */
+    .form__label--half {
+        width: 45.5%;
+    }
+    .contact__title {
+        text-align: center;
+    }
+    .form__button {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .reviews__slider-title {
+        flex-direction: column;
+    }
+    .reviews__title {
+        font-size: 26px;
+        margin-right: 0px;
+    }
+    .reviews__btn {
+        margin-top: 11.68%;
+    }
+    .reviews__slider-item {
+        width: 100%;
+        grid-template-columns: fit-content(6.5625rem) fit-content(30.3125rem);
+        justify-content: center;
+    }
+    .reviews__slider-slid .reviews__slider-item:nth-child(2) {
+        display: none;
+    }
+    .form__label-title {
+        font-size: 14px;
+    }
+    .form__input {
+        font-size: 16px;
+    }
+    /* contact */
+    .form {
+        flex-direction: column;
+    }
+    .form__label--half,
+    .form__label--full {
+        width: 100%;
+        margin-left:0px;
+    }
+    .form .form__label--half:nth-child(2) {
+        padding-top: 14%;
+    }
+    .form__label--full {
+        margin-top: 0px;
+        padding-top: 14%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .reviews__section {
+        width: 90%;
+    }
+    .feedback__img {
+        width: 50px;
+    }
+    .reviews__slider-viewport {
+        padding-top: 11.8%;
+    }
+    .reviews__slider-comment-author {
+        padding-top: 8%;
+    }
+    .reviews__slider-author-desc {
+        margin-left: 20px;
+    }
+    .reviews__slider-author-name {
+        font-size: 16px;
+    }
+    /* contact */
+    .contact {
+            padding-bottom: 25%;
+    }
+    .contact__title {
+        font-size: 24px;
+    }
+    .form__button {
+        width: 260px;
+        font-size: 16px;
+    }
 }
