@@ -4,14 +4,15 @@ section.section.skills
             .skills__next
                 h2.skills__title Чем я могу быть полезен вам
                 p.skills__title-info Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-            .skills__grid
-                .skills__wrap
-                    h4.skills__title Front-end
-                    include skills-list.pug
-                    +skills-list(['HTML5','CSS3','Js','Jquery и Vue.js'], ['-70', '-60', '-53', '-19'])
-                .skills__wrap
-                    h4.skills__title Workflow
-                    include skills-list.pug
-                    +skills-list(['GIT','Terminal','Gulp','Webpack'], ['-10', '-19', '-35', '-30'])
+            #skills-container
+            //- .skills__grid
+            //-     .skills__wrap
+            //-         h4.skills__title Front-end
+            //-         include skills-list.pug
+            //-         +skills-list(['HTML5','CSS3','Js','Jquery и Vue.js'], ['-70', '-60', '-53', '-19'])
+            //-     .skills__wrap
+            //-         h4.skills__title Workflow
+            //-         include skills-list.pug
+            //-         +skills-list(['GIT','Terminal','Gulp','Webpack'], ['-10', '-19', '-35', '-30'])
     .skills__background
         +image('content/skills/keyboard-skills-bg.png', 'skills__background--left')
