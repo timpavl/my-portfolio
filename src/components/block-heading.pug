@@ -1,11 +1,11 @@
 section.section.heading
     .parallax
-        .parallax__layer
-            +image('content/heading/header.png', 'parallax__train-img')
-        .parallax__layer
-            +image('content/heading/grass.png','parallax__grass-img')
-        .parallax__layer
-            +image('content/heading/blackout.png','parallax__blackout-img')
+        .parallax__layer.parallax__sky(data-layer-number= '1' data-speed= '0.05')
+            +image('content/heading/header.png', 'parallax__train-img', 'presentation')
+        .parallax__layer(data-layer-number= '2' data-speed= '0.065')
+            +image('content/heading/grass.png','parallax__grass-img', 'presentation')
+        .parallax__layer(data-layer-number= '3' data-speed= '0.1')
+            +image('content/heading/blackout.png','parallax__blackout-img', 'presentation')
     .container.heading__section
         include block-header
         include block-header-content

@@ -1,38 +1,40 @@
 section.section.reviews
     .container.reviews__section
         .reviews-content
-            .reviews__slider
-                .reviews__slider-title
-                    h2.reviews__title Что обо мне говорят
-                    .reviews__btn 
-                        button.reviews__btn__left
-                            +icon('arrow-down', 'reviews__btn__left-svg')
-                        button.reviews__btn__right
-                            +icon('arrow-down', 'reviews__btn__right-svg')
-                .reviews__slider-viewport
-                    ul.reviews__slider-slid
-                        li.reviews__slider-item
-                            .reviews__slider-commas
-                                +icon('quote', 'reviews__slider-commas-svg')
-                            .reviews__slider-comment
-                                p.reviews__slider-comment-blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
-                                .reviews__slider-comment-author
-                                    .reviews__slider-author-photo
-                                        +image('content/feedback/dima.png', 'feedback__img')
-                                    .reviews__slider-author-desc
-                                        h4.reviews__slider-author-name Ковальчук Дмитрий
-                                        p.reviews__slider-author-position Основатель Loftschool
-                        li.reviews__slider-item
-                            .reviews__slider-commas
-                                +icon('quote', 'reviews__slider-commas-svg')
-                            .reviews__slider-comment
-                                p.reviews__slider-comment-blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
-                                .reviews__slider-comment-author
-                                    .reviews__slider-author-photo
-                                        +image('content/feedback/vova.png', 'feedback__img')
-                                    .reviews__slider-author-desc
-                                        h4.reviews__slider-author-name Владимир Сабанцев
-                                        p.reviews__slider-author-position Преподаватель
+            #feedback-slider
+            //- include feedback-slider
+            //- .reviews__slider
+            //-     .reviews__slider-title
+            //-         h2.reviews__title Что обо мне говорят
+            //-         .reviews__btn 
+            //-             button.reviews__btn__left
+            //-                 +icon('arrow-down', 'reviews__btn__left-svg')
+            //-             button.reviews__btn__right
+            //-                 +icon('arrow-down', 'reviews__btn__right-svg')
+            //-     .reviews__slider-viewport
+            //-         ul.reviews__slider-slid
+            //-             li.reviews__slider-item
+            //-                 .reviews__slider-commas
+            //-                     +icon('quote', 'reviews__slider-commas-svg')
+            //-                 .reviews__slider-comment
+            //-                     p.reviews__slider-comment-blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+            //-                     .reviews__slider-comment-author
+            //-                         .reviews__slider-author-photo
+            //-                             +image('content/feedback/dima.png', 'feedback__img')
+            //-                         .reviews__slider-author-desc
+            //-                             h4.reviews__slider-author-name Ковальчук Дмитрий
+            //-                             p.reviews__slider-author-position Основатель Loftschool
+            //-             li.reviews__slider-item
+            //-                 .reviews__slider-commas
+            //-                     +icon('quote', 'reviews__slider-commas-svg')
+            //-                 .reviews__slider-comment
+            //-                     p.reviews__slider-comment-blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+            //-                     .reviews__slider-comment-author
+            //-                         .reviews__slider-author-photo
+            //-                             +image('content/feedback/vova.png', 'feedback__img')
+            //-                         .reviews__slider-author-desc
+            //-                             h4.reviews__slider-author-name Владимир Сабанцев
+            //-                             p.reviews__slider-author-position Преподаватель
 
 section.section.contact
     .container.contact__section

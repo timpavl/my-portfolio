@@ -1,0 +1,30 @@
+script(type="text/x-template")#feedbackSlider-template
+    .reviews__slider
+        .reviews__slider-title
+            h2.reviews__title Что обо мне говорят
+            .reviews__btn 
+                button(@click="previous()").reviews__btn__left
+                    +icon('arrow-down', 'reviews__btn__left-svg')
+                button(@click="next()").reviews__btn__right
+                    +icon('arrow-down', 'reviews__btn__right-svg')
+        .reviews__slider-viewport
+            flickity(ref="flickity" :options="flickityOptions")
+                //- li(v-for= "feedback in feedbackData" :key="feedback.id").reviews__slider-item 
+                feedbackSliderItem(
+                    class="reviews__slider-item"
+                    v-for= "feedback in feedbackData" :key="feedback.id"
+                    :feedback= "feedback"
+                )
+script(type="text/x-template")#feedbackSliderItem-template
+    //- TODO это особенность данного слайдера, что без этих кастылей ни как?
+    .reviews__slider-item-box
+        .reviews__slider-commas
+                +icon('quote', 'reviews__slider-commas-svg')
+        .reviews__slider-comment
+            .reviews__slider-comment-blockquote {{feedback.text}}
+            .reviews__slider-comment-author
+                .reviews__slider-author-photo
+                    img(:src="feedback.avatar").feedback__img
+                .reviews__slider-author-desc
+                    h4.reviews__slider-author-name {{feedback.title}}
+                    p.reviews__slider-author-position {{feedback.subtitle}}
